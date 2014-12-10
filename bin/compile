@@ -4,14 +4,14 @@ set -e            # fail fast
 set -o pipefail   # don't ignore exit codes when piping output
 
 echo "Testing node in PATH"
-echo "which node"
+echo `which node`
 if [[ `node --version` != "v0.11.14" ]]; then
   echo " -> Failed! Result: `node --version`"
   exit 1
 fi
 
 echo "Testing npm in PATH"
-echo "which npm"
+echo `which npm`
 if [[ `npm --version` != "v2.1.11" ]]; then
   echo " -> Failed! Result: `npm --version`"
   exit 1
