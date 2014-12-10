@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+set -e            # fail fast
+set -o pipefail   # don't ignore exit codes when piping output
+
+echo "Testing node in PATH"
+if [[ `node --version` != "v0.11.14" ]]; then
+  echo " -> Failed! Result: `node --version`"
+  exit 1
+fi
+
+echo "Testing npm in PATH"
+if [[ `npm --version` != "v2.1.11" ]]; then
+  echo " -> Failed! Result: `npm --version`"
+  exit 1
+fi
+
+echo "Testing NODE_HOME"
+if ! [ test -d $NODE_HOME ]; then
+  echo " -> Failed! NODE_HOME is: $NODE_HOME, not a directory"
+  exit 1
+fi
+
+echo "All tests passed"

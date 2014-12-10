@@ -1,0 +1,10 @@
+{
+  "name": "multibp-test",
+  "version": "1.0.0",
+  "description": "A test for the Heroku node.js buildpack used with the multi buildpack",
+  "author": "Hunter Loftis <hunter@hunterloftis.com>",
+  "engines": {
+    "node": "0.11.14",
+    "npm": "2.1.11"
+  }
+}
