@@ -6,5 +6,8 @@
   "engines": {
     "node": "0.11.14",
     "npm": "2.1.11"
+  },
+  "scripts": {
+    "start": "echo '(package.json start script)'"
   }
 }
