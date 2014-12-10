@@ -15,6 +15,18 @@ if [[ `npm --version` != "2.1.11" ]]; then
   exit 1
 fi
 
+echo "Testing bower in PATH"
+if [[ `bower --version` != "1.3.12" ]]; then
+  echo " -> Failed! Result: `bower --version`"
+  exit 1
+fi
+
+echo "Testing grunt in PATH"
+if [[ `grunt --version` != "grunt-cli v0.1.13" ]]; then
+  echo " -> Failed! Result: `grunt --version`"
+  exit 1
+fi
+
 echo "Testing NODE_HOME"
 if ! test -d $NODE_HOME; then
   echo " -> Failed! NODE_HOME is: $NODE_HOME, not a directory"
