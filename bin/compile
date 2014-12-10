@@ -4,7 +4,8 @@ set -e            # fail fast
 set -o pipefail   # don't ignore exit codes when piping output
 
 echo "Testing node in PATH"
-echo `which node`
+echo "which node: `which node`"
+echo "PATH: $PATH"
 if [[ `node --version` != "v0.11.14" ]]; then
   echo " -> Failed! Result: `node --version`"
   exit 1
