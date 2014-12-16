@@ -34,3 +34,7 @@ if ! test -d $NODE_HOME; then
 fi
 
 echo "All tests passed"
+
+echo ""
+echo "Dependency tree:"
+npm ls
