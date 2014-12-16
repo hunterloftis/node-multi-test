@@ -8,10 +8,11 @@
     "npm": "2.1.11"
   },
   "scripts": {
-    "start": "echo '(package.json start script)'"
+    "start": "npm ls"
   },
   "dependencies": {
     "bower": "1.3.12",
-    "grunt-cli": "0.1.13"
+    "grunt-cli": "0.1.13",
+    "less": "1.7.0"
   }
 }
