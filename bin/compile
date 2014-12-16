@@ -37,4 +37,5 @@ echo "All tests passed"
 
 echo ""
 echo "Dependency tree:"
-npm ls
+ls -lah
+#npm ls
