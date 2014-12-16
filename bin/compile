@@ -36,6 +36,9 @@ fi
 echo "All tests passed"
 
 echo ""
-echo "Dependency tree:"
+#echo "Dependency tree:"
+echo "Location:"
+pwd
+echo "Files:"
 ls -lah
 #npm ls
